@@ -1,0 +1,20 @@
+2026-05-09 16:27:06,372 | WARNING | ORIGEN: app | Incidencia Médica en Caso #1: ID Médico 'VITAL-99' debe ser alfanumérico.
+2026-05-09 16:27:06,373 | WARNING | ORIGEN: app | Incidencia Médica en Caso #2: ID Médico 'VITAL-99!!' debe ser alfanumérico.
+2026-05-09 16:27:06,373 | WARNING | ORIGEN: app | Incidencia Médica en Caso #3: Denegación de Cita: Telemedicina.tasar_servicio() got an unexpected keyword argument 'conexion_estable'
+2026-05-09 16:27:06,374 | WARNING | ORIGEN: app | Incidencia Médica en Caso #4: Denegación de Cita: Fallo de protocolo: Requiere conexión estable.
+2026-05-09 16:27:06,374 | WARNING | ORIGEN: app | Incidencia Médica en Caso #5: Denegación de Cita: ProcedimientoQuirurgico.tasar_servicio() got an unexpected keyword argument 'ayuno_completo'
+2026-05-09 16:27:06,375 | WARNING | ORIGEN: app | Incidencia Médica en Caso #6: Denegación de Cita: Riesgo Clínico: Paciente no cumple ayuno.
+2026-05-09 16:27:06,375 | ERROR | ORIGEN: app | FALLO CRÍTICO en Caso #7: unsupported operand type(s) for /: 'str' and 'int'
+Traceback (most recent call last):
+  File "c:\Users\leonr\OneDrive - Universidad del Magdalena\Universidad\UNAD\Talleres 2026\Mayo\3 en 1\Programacion\Problema_Desarrollo\app.py", line 12, in ejecutar_flujo
+    resultado = funcion()
+  File "c:\Users\leonr\OneDrive - Universidad del Magdalena\Universidad\UNAD\Talleres 2026\Mayo\3 en 1\Programacion\Problema_Desarrollo\app.py", line 52, in <lambda>
+    casos.append(lambda: consulta.tasar_servicio(minutos="treinta"))
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\leonr\OneDrive - Universidad del Magdalena\Universidad\UNAD\Talleres 2026\Mayo\3 en 1\Programacion\Problema_Desarrollo\entities\treatment.py", line 8, in tasar_servicio
+    return self.honorarios_base * factor * (minutos / 20)
+                                            ~~~~~~~~^~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2026-05-09 16:27:06,384 | WARNING | ORIGEN: app | Incidencia Médica en Caso #8: Correo electrónico inválido: marta.com
+2026-05-09 16:27:06,384 | INFO | ORIGEN: app | Caso #9 procesado correctamente.
+2026-05-09 16:27:06,385 | INFO | ORIGEN: app | Caso #10 procesado correctamente.
